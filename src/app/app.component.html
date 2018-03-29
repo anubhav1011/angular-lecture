@@ -1,6 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <input #newTask id="new-task" type="text">
 
-<button id="save-button" (click)="getInputValue(newTask.value);newTask.value=''">Send input</button>
+<button id="save-button" (click)="getInputValue(newTask.value);">Send input</button>
 
-<textarea (keyup)="emitWordCount($event)"></textarea>
+
+<app-child  [name]=newTask.value>
+
+
+</app-child>
+
+<!--<textarea (keyup)="emitWordCount($event)"></textarea>-->

@@ -6,7 +6,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
 
 
   getInputValue(xyz: string) {
@@ -16,10 +15,10 @@ export class AppComponent {
 
   }
 
-  emitWordCount(e: Event): void {
+  /*emitWordCount(e: Event): void {
     console.log(
       (e.target.value.match(/\S+/g) || []).length);
-  }
+  }*/
 
 
 }
